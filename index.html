@@ -10,11 +10,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/material-components-web.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+
+    <link href="https://unpkg.com/material-components-web@4.0.0/dist/material-components-web.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://unpkg.com/material-components-web@4.0.0/dist/material-components-web.min.js"></script>
-    <script src="script/main.js"></script>
 </head>
 
 <body>
@@ -28,7 +32,7 @@
 
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
                 <a href="https://github.com/TecCheck/" class="header-icon-button mdc-button">
-                    <img src="images/github-light.svg" style="margin: 4px;">
+                    <img src="images/github-dark.svg" style="margin: 4px;">
                     <span class="mdc-button__label top-bar-icon-button"
                         style="color: var(--mdc-theme-on-primary, rgba(0, 0, 0, 0.54));">
                         Github
@@ -40,177 +44,144 @@
 
     <div class="mdc-top-app-bar--fixed-adjust content-main">
         <div class="mdc-layout-grid">
+            <h2 class="title-text mdc-typography mdc-typography--headline4">
+                Projects
+            </h2>
+
             <div class="mdc-layout-grid__inner">
 
-                <!-- Header -->
-                <div class="mdc-layout-grid__cell--span-12">
-                    <h2 class="card__title mdc-typography mdc-typography--headline4">
-                        Some of my Projects
-                    </h2>
-                </div>
+                <div
+                    class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-card">
+                    <a href="https://github.com/TecCheck/one_dark_theme" class="mdc-card__primary-action">
+                        <img class="card-image" src="images/One-Dark-Theme.png" style="width: 100%;" />
+                    </a>
 
-                <!-- Ultimate Converter Cell -->
-                <div class="mdc-layout-grid__cell--span-6">
-                    <!-- Ultimate Converter Card -->
-                    <div class="mdc-card mdc-card--outlined" href="">
-                        <div class="mdc-card__primary-no-action">
-                            <a class="mdc-card__media mdc-card__media--16-9 card__media"
-                                href="https://github.com/TecCheck/UltimateConverter"
-                                style="background-image: url(&quot;images/UltimateConverter.png&quot;); background-position: top;">
-                            </a>
-                            <div class="card__primary">
-                                <h2 class="card__title mdc-typography mdc-typography--headline6">
-                                    Ultimate Converter
-                                </h2>
-                                <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">
-                                    A simple, expandable Converter App for Android. <br>
-                                    Maybe I should change the name... ;)
-                                </h3>
-                            </div>
-                            <!--div class="card__secondary mdc-typography mdc-typography--body2">
-                                    </div-->
-                        </div>
-                        <div class="mdc-card__actions">
-                            <div class="mdc-card__action-buttons">
-                                <a href="https://github.com/TecCheck/UltimateConverter/releases"
-                                    class="mdc-button mdc-card__action mdc-card__action--button">
-                                    <span class="mdc-button__ripple"></span>
-                                    Releases
-                                </a>
-                            </div>
+                    <div class="card-description">
 
-                            <div class="mdc-card__action-icons">
-                                <!--button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
-                                            aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
-                                            <i
-                                                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
-                                            <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-                                        </button>
-                                        <button
-                                            class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
-                                            title="Share" data-mdc-ripple-is-unbounded="true">share</button-->
-                                <a href="https://github.com/TecCheck/UltimateConverter"
-                                    class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
-                                    title="Browse on Github" data-mdc-ripple-is-unbounded="true">
-                                    <img src="images/github.svg">
-                                </a>
-                            </div>
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            One Dark Theme
+                        </h2>
+
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            A Home Assistant theme inspired by atoms one dark theme and built on the Google Dark Theme
+                            by JuanMTech.
                         </div>
                     </div>
                 </div>
-                <!-- Cell End -->
 
-                <!-- TG-Vertretung Cell -->
-                <div class="mdc-layout-grid__cell--span-6">
-                    <!-- TG-Vertretung Card -->
-                    <div class="mdc-card mdc-card--outlined">
-                        <div class="mdc-card__primary-no-action">
-                            <a class="mdc-card__media mdc-card__media--16-9 card__media"
-                                href="https://github.com/TecCheck/TG-Vertretung"
-                                style="background-image: url(&quot;images/TG-Vertretung.png&quot;);">
-                            </a>
-                            <div class="card__primary">
-                                <h2 class="card__title mdc-typography mdc-typography--headline6">
-                                    TG-Vertretung
-                                </h2>
-                                <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">
-                                    An app for my school, where you can see what of your class is replaced or
-                                    removed. It's in German, because I live in Germany
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="mdc-card__actions">
-                            <div class="mdc-card__action-buttons">
-                                <a href="https://github.com/TecCheck/TG-Vertretung/releases"
-                                    class="mdc-button mdc-card__action mdc-card__action--button">
-                                    <span class="mdc-button__ripple"></span>
-                                    Releases
-                                </a>
-                            </div>
+                <div
+                    class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-card">
+                    <a href="https://teccheck.github.io/TG-Mining/" class="mdc-card__primary-action">
+                        <img class="card-image" src="images/TG-Mining.png" style="width: 100%;" />
+                    </a>
 
-                            <div class="mdc-card__action-icons">
-                                <a href="https://github.com/TecCheck/TG-Vertretung"
-                                    class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
-                                    title="Browse on Github" data-mdc-ripple-is-unbounded="true">
-                                    <img src="images/github.svg">
-                                </a>
-                            </div>
+                    <div class="card-description">
+
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            TG-Mining
+                        </h2>
+
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            Some statistics a friend and I created with the data of TG-Vertretung.
+                            Again in German. This is just the Website for displaying the data, but the
+                            data isn't publicly available for privacy reasons.
                         </div>
                     </div>
                 </div>
-                <!-- Cell End -->
 
-                <!-- TG-Mining Cell -->
-                <div class="mdc-layout-grid__cell--span-6">
-                    <!-- TG-Mining Card -->
-                    <div class="mdc-card mdc-card--outlined">
-                        <div class="mdc-card__primary-no-action">
-                            <a class="mdc-card__media mdc-card__media--16-9 card__media"
-                                href="https://teccheck.github.io/TG-Mining/"
-                                style="background-image: url(&quot;images/TG-Mining.png&quot;);">
-                            </a>
-                            <div class="card__primary">
-                                <h2 class="card__title mdc-typography mdc-typography--headline6">
-                                    TG-Mining
-                                </h2>
-                                <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">
-                                    Some statistics me and a friend create with the data of TG-Vertretung. <br>
-                                    Again in German.
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="mdc-card__actions">
-                            <div class="mdc-card__action-buttons">
-                                <a href="https://teccheck.github.io/TG-Mining/"
-                                    class="mdc-button mdc-card__action mdc-card__action--button">
-                                    <span class="mdc-button__ripple"></span>
-                                    Browse
-                                </a>
-                            </div>
+                <div
+                    class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-card">
+                    <a href="https://github.com/TecCheck/TG-Vertretung" class="mdc-card__primary-action">
+                        <img class="card-image" src="images/TG-Vertretung.png" style="width: 100%;" />
+                    </a>
+                    <div class="card-description">
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            TG-Vertretung
+                        </h2>
 
-                            <div class="mdc-card__action-icons">
-                                <a href="https://github.com/TecCheck/TG-Mining"
-                                    class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
-                                    title="Browse on Github" data-mdc-ripple-is-unbounded="true">
-                                    <img src="images/github.svg">
-                                </a>
-                            </div>
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            An app for my school, where you can see what of your class is replaced or removed. It's in
+                            German, because I live in Germany
                         </div>
                     </div>
                 </div>
-                <!-- Cell End -->
 
-                <!-- DanTective Cell -->
-                <div class="mdc-layout-grid__cell--span-6">
-                    <!-- DanTecttive Card -->
-                    <div class="mdc-card mdc-card--outlined">
-                        <div class="mdc-card__primary-no-action">
-                            <a class="mdc-card__media mdc-card__media--16-9 card__media"
-                                href="https://github.com/TecCheck/TG-Mining"
-                                style="background-image: url(&quot;images/DanTective.png&quot;);">
-                            </a>
-                            <div class="card__primary">
-                                <h2 class="card__title mdc-typography mdc-typography--headline6">
-                                    DanTective
-                                </h2>
-                                <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">
-                                    An idea for an indie game I'd like to make.
-                                    <br><br>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="mdc-card__actions">
-                            <div class="mdc-card__action-icons">
-                                <a href="https://github.com/TecCheck/DanTective"
-                                    class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
-                                    title="Browse on Github" data-mdc-ripple-is-unbounded="true">
-                                    <img src="images/github.svg">
-                                </a>
-                            </div>
+                <div
+                    class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-card">
+                    <a href="https://github.com/TecCheck/UltimateConverter" class="mdc-card__primary-action">
+                        <img class="card-image" src="images/UltimateConverter.png" style="width: 100%;" />
+                    </a>
+                    <div class="card-description">
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            Ultimate Converter
+                        </h2>
+
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            A simple, expandable Converter App for Android.
+                            Maybe I should change the name because the app is not as ultimate as planned... ;)
                         </div>
                     </div>
                 </div>
-                <!-- Cell End -->
+
+            </div>
+        </div>
+
+        <div class="mdc-layout-grid">
+            <h2 class="title-text mdc-typography mdc-typography--headline4">
+                About
+            </h2>
+
+            <div class="mdc-layout-grid__inner">
+
+                <div
+                    class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-card">
+                    <a href="https://github.com/TecCheck/one_dark_theme" class="mdc-card__primary-action">
+                    </a>
+
+                    <div class="card-description">
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            This website
+                        </h2>
+                        <h3 class="card-subtitle mdc-typography mdc-typography--subtitle2">
+                        </h3>
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            I created this website more or less just for fun and to learn a bit more about html and css.
+                            There are no frameworks used here. I just used Google's
+                            <a href="https://material.io">
+                                Material Design
+                            </a>
+                            . If you think about learning html and css you can look at the
+                            <a href="https://github.com/TecCheck/teccheck.github.io">
+                                source code
+                            </a>
+                            of this page.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-card">
+                    <a href="https://github.com/TecCheck/one_dark_theme" class="mdc-card__primary-action">
+                    </a>
+
+                    <div class="card-description">
+                        <h2 class="card-title mdc-typography mdc-typography--headline6">
+                            Myself
+                        </h2>
+                        <h3 class="card-subtitle mdc-typography mdc-typography--subtitle2">
+                        </h3>
+                        <div class="card-secondary mdc-typography mdc-typography--body2">
+                            I'm a programmer and tinker from Germany. I am interested in all kinds of tech. There is not
+                            much to say about me. You
+                            can contact me under
+                            <a href="mailto:mcteccy@gmail.com">
+                                mcteccy@gmail.com
+                            </a>
+                            .
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
