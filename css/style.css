@@ -29,25 +29,7 @@
   --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
 
   --mdc-card-border-color: #e0e0e0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --mdc-theme-background: #121212;
-    --mdc-theme-surface: #222;
-    --mdc-theme-error: #b00020;
-    --mdc-theme-on-primary: #000;
-    --mdc-theme-on-secondary: #fff;
-    --mdc-theme-on-surface: #fff;
-    --mdc-theme-on-error: #fff;
-    --mdc-theme-text-primary-on-background: rgba(255, 255, 255, 0.87);
-    --mdc-theme-text-secondary-on-background: rgba(255, 255, 255, 0.54);
-    --mdc-theme-text-hint-on-background: rgba(255, 255, 255, 0.38);
-    --mdc-theme-text-disabled-on-background: rgba(255, 255, 255, 0.38);
-    --mdc-theme-text-icon-on-background: rgba(255, 255, 255, 0.38);
-
-    --mdc-card-border-color: #0f0f0f;
-  }
+  --currentColor: var(--mdc-theme-surface);
 }
 
 body {
@@ -68,21 +50,48 @@ a {
   border-color: var(--mdc-card-border-color);
 }
 
-.mdc-card--outlined {
-  border-color: var(--mdc-card-border-color);
+@media only screen and (max-width: 600px) {
+  .mdc-top-app-bar__title--desktop {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-  .top-bar-icon-button {
-    font-size: 0px;
-    width: 0px;
+@media only screen and (min-width: 601px) {
+  .mdc-top-app-bar__title--mobile {
+    display: none;
   }
+}
+
+.mdc-text-icon-button {
+  font-size: 0.975rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  letter-spacing: 0.0892857143em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-appearance: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.on-primary {
+  color: var(--mdc-theme-text-primary-on-background);
 }
 
 .title-text {
   color: var(--mdc-theme-text-primary-on-background, rgba(0, 0, 0, 0.54));
   margin-left: 24px;
   margin-top: 0px;
+  margin-bottom: 16px;
 }
 
 .card-image {
@@ -90,14 +99,14 @@ a {
   border-top-right-radius: inherit;
 }
 
-.card-description {
-  margin: 24px;
-  margin-top: 0px;
-}
-
 .card-title {
   color: var(--mdc-theme-text-primary-on-background, rgba(0, 0, 0, 0.54));
   margin-bottom: 0px;
+}
+
+.card-description {
+  margin: 24px;
+  margin-top: 0px;
 }
 
 .card-subtitle {
@@ -107,4 +116,8 @@ a {
 
 .card-secondary {
   color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, 0.54));
+}
+
+.feather-icon {
+  stroke: var(--mdc-theme-on-primary, rgba(0, 0, 0, 0.54));
 }
