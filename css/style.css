@@ -62,9 +62,22 @@ a {
   }
 }
 
+.mdc-typography--headline4 {
+  font-family: Rubik, Roboto, sans-serif;
+}
+
+.mdc-typography--headline6 {
+  font-family: Rubik, Roboto, sans-serif;
+}
+
+.mdc-top-app-bar__title {
+  font-family: Rubik, Roboto, sans-serif;
+}
+
 .mdc-text-icon-button {
-  font-size: 0.975rem;
-  font-weight: 500;
+  font-family: Rubik, Roboto, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 2.25rem;
   letter-spacing: 0.0892857143em;
   text-transform: uppercase;
